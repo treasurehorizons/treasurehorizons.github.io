@@ -84,8 +84,8 @@ section {
 /* Media query for smaller screens (e.g., mobile devices) */
 @media screen and (max-width: 512px) {
   .cover-img {
-    margin-top: 0px;
-    height: 400px;
+    margin: 0px;
+    height: 380px;
   }
 }
 
