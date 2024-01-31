@@ -17,6 +17,7 @@
     <!-- Assets and stylesheets -->
     <link rel="icon" type="image/png" href="assets/images/favicon.png">
     <link href="assets/style.css" rel="stylesheet">
+    <audio id="popSound" src="assets/sounds/pop.mp3"></audio>
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ED3LSJD3D6"></script>
@@ -27,19 +28,21 @@
 
       gtag('config', 'G-ED3LSJD3D6');
     </script>
+
+    <script src="assets/script.js"></script>
   </head>
 
   <body>
     <main>
-      <div class="cover-img"></div>
+      <div class="cover-img" onclick="playSound()" onmouseover="playSound()"></div>
       <section>
-        <a class="secondary-cta" href="assets/Treasure-Horizons-Rulebook.pdf">
+        <a class="secondary-cta" onmouseover="playSound()" href="assets/Treasure-Horizons-Rulebook.pdf">
           See Rulebook
         </a>
-        <a class="primary-cta" href="https://www.thegamecrafter.com/games/treasure-horizons">
+        <a class="primary-cta" onmouseover="playSound()" href="https://www.thegamecrafter.com/games/treasure-horizons">
           Buy Game
         </a>
-        <a class="secondary-cta" href="https://www.youtube.com/watch?v=4YoLEqn2ygY&list=PLA6jTJ4xgbtNCv5xTvnos96Dv-PDJ5s9k">
+        <a class="secondary-cta" onmouseover="playSound()" href="https://www.youtube.com/watch?v=4YoLEqn2ygY&list=PLA6jTJ4xgbtNCv5xTvnos96Dv-PDJ5s9k">
           Watch Tutorial
         </a>
       </section>

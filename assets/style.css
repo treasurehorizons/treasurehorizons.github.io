@@ -44,6 +44,12 @@ main {
   margin: 40px 0;
   height: 512px;
   color: #fff;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.cover-img:hover {
+  transform: scale(1.1);
 }
 
 section {
@@ -54,36 +60,36 @@ section {
 
 .primary-cta,
 .secondary-cta {
-    display: inline-block;
-    margin: 10px;
-    padding: 15px 20px; /* Adjust vertical and horizontal padding */
-    width: 100%; /* Make it full-width on smaller screens */
-    min-width: 140px;
-    max-width: 250px; /* Set a maximum width */
-    font-size: 18px;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    margin: 10px;
-    text-align: center;
+  display: inline-block;
+  margin: 10px;
+  padding: 15px 20px; /* Adjust vertical and horizontal padding */
+  width: 100%; /* Make it full-width on smaller screens */
+  min-width: 140px;
+  max-width: 250px; /* Set a maximum width */
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin: 10px;
+  text-align: center;
 }
 
 .secondary-cta {
-    background-color: #3498db;
-    color: #fff;
+  background-color: #3498db;
+  color: #fff;
 }
 
 .secondary-cta:hover {
-    background-color: #297fb8;
+  background-color: #226b9c;
 }
 
 .primary-cta {
-    background-color: #2ecc71;
-    color: #fff;
+  background-color: #2ecc71;
+  color: #fff;
 }
 
 .primary-cta:hover {
-    background-color: #29b765;
+  background-color: #24a057;
 }
 
 
