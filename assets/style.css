@@ -51,7 +51,7 @@ section {
     margin: 10px;
     padding: 15px 20px; /* Adjust vertical and horizontal padding */
     width: 100%; /* Make it full-width on smaller screens */
-    min-width: 200px;
+    min-width: 130px;
     max-width: 250px; /* Set a maximum width */
     font-size: 18px;
     font-weight: bold;
