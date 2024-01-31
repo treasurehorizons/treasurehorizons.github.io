@@ -31,16 +31,15 @@ main {
   height: auto;
   width: 100%;
   background-image: url('images/cover.png');
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  margin: 0;
+  margin: 40px 0;
   height: 512px;
   color: #fff;
 }
 
 section {
-  margin-top: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,7 +80,14 @@ section {
     background-color: #29b765;
 }
 
+
 /* Media query for smaller screens (e.g., mobile devices) */
+@media screen and (max-width: 512px) {
+  .cover-img {
+    height: 256px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   section {
     flex-direction: column;
