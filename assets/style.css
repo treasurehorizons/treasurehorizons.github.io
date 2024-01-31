@@ -51,9 +51,9 @@ section {
     margin: 10px;
     padding: 15px 20px; /* Adjust vertical and horizontal padding */
     width: 100%; /* Make it full-width on smaller screens */
-    min-width: 140px;
+    min-width: 120px;
     max-width: 250px; /* Set a maximum width */
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     text-decoration: none;
     border-radius: 5px;
@@ -84,7 +84,8 @@ section {
 /* Media query for smaller screens (e.g., mobile devices) */
 @media screen and (max-width: 512px) {
   .cover-img {
-    height: 256px;
+    margin-top: 0px;
+    height: 400px;
   }
 }
 
@@ -95,7 +96,8 @@ section {
 
   .primary-cta,
   .secondary-cta {
-      width: 100%; /* Make buttons full-width on smaller screens */
-      margin: 10px 0; /* Add margin between buttons on new lines */
+      width: 100%;
+      margin: 10px 0;
+      font-size: 14px;
   }
 }
