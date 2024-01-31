@@ -22,11 +22,18 @@ main {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #f0f0f0; /* Optional background color */
+  background-color: #fff9d8; /* Optional background color */
 }
 
-img.cover-img {
+.cover-img {
   max-width: 512px;
   height: auto;
   width: 100%;
+  background-image: url('images/cover.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  height: 512px; /* Set the height as needed */
+  color: #fff; /* Set text color for better visibility */
 }
