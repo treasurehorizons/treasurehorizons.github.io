@@ -49,8 +49,11 @@ section {
 .primary-cta,
 .secondary-cta {
     display: inline-block;
-    padding: 15px 0; /* Adjust vertical padding */
-    width: 200px; /* Set a fixed width */
+    margin: 10px;
+    padding: 15px 20px; /* Adjust vertical and horizontal padding */
+    width: 100%; /* Make it full-width on smaller screens */
+    min-width: 200px;
+    max-width: 250px; /* Set a maximum width */
     font-size: 18px;
     font-weight: bold;
     text-decoration: none;
@@ -76,4 +79,17 @@ section {
 
 .primary-cta:hover {
     background-color: #29b765;
+}
+
+/* Media query for smaller screens (e.g., mobile devices) */
+@media screen and (max-width: 768px) {
+  section {
+    flex-direction: column;
+  }
+
+  .primary-cta,
+  .secondary-cta {
+      width: 100%; /* Make buttons full-width on smaller screens */
+      margin: 10px 0; /* Add margin between buttons on new lines */
+  }
 }
