@@ -15,12 +15,13 @@ body, p, h1, h2, h3, h4, h5, h6 {
 
 body {
   margin: 0;
-  -webkit-user-select: none; /* Safari */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* Internet Explorer/Edge */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
   height: auto;
   width: 100%;
+  overflow-x: hidden;
 }
 
 main {
@@ -62,10 +63,10 @@ section {
 .secondary-cta {
   display: inline-block;
   margin: 10px;
-  padding: 15px 20px; /* Adjust vertical and horizontal padding */
-  width: 100%; /* Make it full-width on smaller screens */
+  padding: 15px 20px;
+  width: 100%;
   min-width: 140px;
-  max-width: 250px; /* Set a maximum width */
+  max-width: 250px;
   font-size: 18px;
   text-decoration: none;
   border-radius: 5px;
@@ -93,7 +94,34 @@ section {
 }
 
 
-/* Media query for smaller screens (e.g., mobile devices) */
+.ribbon {
+  text-align: center;
+  color: #fff;
+  padding: 10px;
+  font-size: 14px;
+  background-color: #2ecc71;
+  box-shadow: 0 5px 15px rgba(46, 204, 113, 0.4), 0 0 15px rgba(46, 204, 113, 0.3); /* Updated box shadow */
+}
+
+.corner-left-ribbon {
+  position: absolute;
+  top: 150px;
+  left: -40px;
+  width: 250px;
+  transform: rotate(-45deg);
+  transform-origin: top left;
+}
+
+.corner-right-ribbon {
+  position: absolute;
+  top: 150px;
+  right: -40px;
+  width: 250px;
+  transform: rotate(45deg);
+  transform-origin: top right;
+}
+
+
 @media screen and (max-width: 512px) {
   .cover-img {
     margin: 0px;
@@ -106,10 +134,18 @@ section {
     flex-direction: column;
   }
 
+  #countdown {
+    display: none;
+  }
+
   .primary-cta,
   .secondary-cta {
       width: 100%;
       margin: 10px 0;
       font-size: 16px;
+  }
+
+  .cover-img:hover {
+    transform: none;
   }
 }

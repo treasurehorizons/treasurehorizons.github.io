@@ -28,24 +28,30 @@
 
       gtag('config', 'G-ED3LSJD3D6');
     </script>
-
-    <script src="assets/script.js"></script>
   </head>
 
   <body>
     <main>
-      <div class="cover-img" onclick="playSound()" onmouseover="playSound()"></div>
+      <div class="ribbon corner-left-ribbon">
+        Coming Feb 5, 2024!
+      </div>
+      <div id="countdown" class="ribbon corner-right-ribbon">
+        Restart to see countdown!
+      </div>
+      <div id="coverImg" class="cover-img"></div>
       <section>
-        <a class="secondary-cta" onmouseover="playSound()" href="assets/Treasure-Horizons-Rulebook.pdf">
+        <a id="rulebookLink" class="secondary-cta" href="assets/Treasure-Horizons-Rulebook.pdf">
           See Rulebook
         </a>
-        <a class="primary-cta" onmouseover="playSound()" href="https://www.thegamecrafter.com/games/treasure-horizons">
+        <a id="buyGameLink" class="primary-cta" href="https://www.thegamecrafter.com/games/treasure-horizons">
           Buy Game
         </a>
-        <a class="secondary-cta" onmouseover="playSound()" href="https://www.youtube.com/watch?v=4YoLEqn2ygY&list=PLA6jTJ4xgbtNCv5xTvnos96Dv-PDJ5s9k">
+        <a id="watchTutorialLink" class="secondary-cta" href="https://www.youtube.com/watch?v=4YoLEqn2ygY&list=PLA6jTJ4xgbtNCv5xTvnos96Dv-PDJ5s9k">
           Watch Tutorial
         </a>
       </section>
     </main>
   </body>
+
+  <script src="assets/script.js"></script>
 </html>
