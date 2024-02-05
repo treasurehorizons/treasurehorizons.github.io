@@ -68,6 +68,5 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('watchTutorialLink').addEventListener('mouseover', playSoundOnUserClick);
 
     playSoundOnUserClick();
-    startCountdown();
   }
 });
