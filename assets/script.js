@@ -57,7 +57,7 @@ function setYoutubeLink() {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-  setYoutubeLink();
+  // setYoutubeLink(); has a bug if user doesn't have YouTube app
 
   if (window.innerWidth > 768) {
     document.getElementById('coverImg').addEventListener('click', playSoundOnUserClick);
