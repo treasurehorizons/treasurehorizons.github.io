@@ -52,7 +52,7 @@ function setYoutubeLink() {
   var watchTutorialLink = document.getElementById('watchTutorialLink');
 
   if (/Mobi/i.test(navigator.userAgent) && window.innerWidth <= 768) {
-    watchTutorialLink.href = 'youtube://www.youtube.com/watch?v=4YoLEqn2ygY&list=PLA6jTJ4xgbtNCv5xTvnos96Dv-PDJ5s9k&feature=applinks';
+    watchTutorialLink.href = 'youtube://www.youtube.com/watch?v=E6pzlEWk338&list=PLA6jTJ4xgbtNCv5xTvnos96Dv-PDJ5s9k&feature=applinks';
   }
 }
 
